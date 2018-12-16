@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html>
+{% extends 'master.html' %}
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% load static %}
-    <link type="text/css" rel="stylesheet" href="{% static 'accounts/css/materialize.css' %}">
-</head>
-
-<body>
-    <div class="container">
-
-        <h1>Welcome login page</h1>
-    </div>
-</body>
-
-</html>
+{% block body %}
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telephone</label>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

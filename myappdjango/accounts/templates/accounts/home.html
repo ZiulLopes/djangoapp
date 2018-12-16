@@ -1,0 +1,10 @@
+{% extends 'master.html' %}
+
+{% block body %}
+<h2>Name: {{ name }}</h2>
+<div class="collection">
+    {% for iten in programing_languages %}
+    <a href="#!" class="collection-item">{{ iten }}</a>
+    {% endfor %}
+</div>
+{% endblock %}
