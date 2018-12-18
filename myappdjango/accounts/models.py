@@ -5,6 +5,6 @@ from django.contrib.auth.models import User
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.PROTECT)
     description = models.CharField(max_length=100, default='')
-    city = models.CharField(default='')
-    website = models.CharField(default='')
+    city = models.CharField(max_length=100, default='')
+    website = models.CharField(max_length=100, default='')
     phone = models.IntegerField(default=0)
